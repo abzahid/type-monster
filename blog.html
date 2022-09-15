@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <style>
+        .questions {
+            color: rgba(253, 242, 240, 0.894);
+            font-size: 30px;
+            text-align: center;
+        }
+
+        div {
+            background-color: rgb(42, 42, 42);
+            color: white;
+            padding: 30px;
+            width: 80%;
+            margin: auto;
+            margin-top: 20px;
+            border-radius: 7px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <P class="questions">***1. What is the difference between local storage and session storage ?</P>
+        <p>
+            Local Storage: This read-only interface property provides access to the Document’s local storage object, the
+            stored data is stored across browser sessions. Similar to sessionStorage, except that localStorage data gets
+            cleared when the page session ends – that is when the page is closed. It is cleared when the last “private”
+            tab of a browser is closed (localStorage data for a document loaded in a private browsing or incognito
+            session).
+
+            Session Storage: Session Storage objects can be accessed using the sessionStorage read-only property. The
+            difference between sessionStorage and localStorage is that localStorage data does not expire, whereas
+            sessionStorage data is cleared when the page session ends.
+
+            The difference between localStorage and sessionStorage has to do with lifetime and scope: how long the data
+            is saved for and who the data is accessible to. Session storage is destroyed once the user closes the
+            browser whereas, Local storage stores data with no expiration date.</p>
+    </div>
+    <div>
+        <P class="questions">***2. What is the difference between global scope and block scope ?</P>
+        <p>
+            Global Scope: In a programming environment, the global scope is the scope that contains, and is visible in,
+            all other scopes. In client-side JavaScript, the global scope is generally the web page inside which all the
+            code is being executed.
+
+            Block Scope: This scope restricts the variable that is declared inside a specific block, from access by the
+            outside of the block. The let & const keyword facilitates the variables to be block scoped.
+
+            In a browser environment, the global scope is controlled by the window object while in Node. js, it's
+            controlled by the global object. Block scopes are what you get when you use if statements, for statements,
+            and the like.</p>
+    </div>
+    <div>
+        <P class="questions">***3. How does the event loop work in javascript?</P>
+        <p>
+            Event Loop: The Event Loop has one simple job-to monitor the Call Stack and the Callback Queue. If the Call
+            Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack,
+            which effectively runs it. Such an iteration is called a tick in the Event Loop. JavaScript has a runtime
+            model based on an event loop, which is responsible for executing the code, collecting and processing events,
+            and executing queued sub-tasks. This model is quite different from models in other languages like C and
+            Java.</p>
+    </div>
+    <div>
+        <P class="questions">***4.Why we can get undifined?</P>
+        <p>A variable that has not been assigned a value is of type undefined. A method or statement also returns
+            undefined if the variable that is being evaluated does not have an assigned value. A function returns
+            undefined if a value was not returned. </p>
+    </div>
+
+</body>
+
+</html>
