@@ -55,18 +55,22 @@
             outside of the block. The let & const keyword facilitates the variables to be block scoped.
 
             In a browser environment, the global scope is controlled by the window object while in Node. js,and the
-            like.
+            like.In a browser environment, the global scope is controlled by the window object while in Node. js, it's
+            controlled by the global object. Block scopes are what you get when you use if statements, for statements,
+            and the like.
 
         </p>
     </div>
     <div>
-        <P class="questions">***3. How does the event loop work in javascript?</P>
+        <P class="questions">3. How does the event loop work in javascript?</P>
         <p>
             Event Loop: The Event Loop has one simple job-to monitor the Call Stack and the Callback Queue. If the Call
             Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack,
             which effectively runs it. Such an iteration is called a tick in the Event Loop. JavaScript has a runtime
             model based on an event loop, which is responsible for executing the code, collecting and processing events,
-            and executing queued sub-tasks. This model is quite different from models in other languages like C and
+            and executing queued sub-tasks. This model is quite different from models in other languages like C and If
+            the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the
+            Call Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop.
             Java.</p>
     </div>
     <div>
