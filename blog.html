@@ -28,7 +28,7 @@
 
 <body>
     <div>
-        <P class="questions">***1. What is the difference between local storage and session storage ?</P>
+        <P class="questions">1. What is the difference between local storage and session storage ?</P>
         <p>
             Local Storage: This read-only interface property provides access to the Document’s local storage object, the
             stored data is stored across browser sessions. Similar to sessionStorage, except that localStorage data gets
@@ -36,16 +36,16 @@
             tab of a browser is closed (localStorage data for a document loaded in a private browsing or incognito
             session).
 
-            Session Storage: Session Storage objects can be accessed using the sessionStorage read-only property. The
-            difference between sessionStorage and localStorage is that localStorage data does not expire, whereas
-            sessionStorage data is cleared when the page session ends.
+            sessionStorage is similar to localStorage ; the difference is that while data in localStorage doesn't
+            expire, data in sessionStorage is cleared when the page session ends. Whenever a document is loaded in a
+            particular tab in the browser, a unique page session gets created and assigned to that particular tab
 
             The difference between localStorage and sessionStorage has to do with lifetime and scope: how long the data
             is saved for and who the data is accessible to. Session storage is destroyed once the user closes the
             browser whereas, Local storage stores data with no expiration date.</p>
     </div>
     <div>
-        <P class="questions">***2. What is the difference between global scope and block scope ?</P>
+        <P class="questions">2. What is the difference between global scope and block scope ?</P>
         <p>
             Global Scope: In a programming environment, the global scope is the scope that contains, and is visible in,
             all other scopes. In client-side JavaScript, the global scope is generally the web page inside which all the
@@ -54,9 +54,10 @@
             Block Scope: This scope restricts the variable that is declared inside a specific block, from access by the
             outside of the block. The let & const keyword facilitates the variables to be block scoped.
 
-            In a browser environment, the global scope is controlled by the window object while in Node. js, it's
-            controlled by the global object. Block scopes are what you get when you use if statements, for statements,
-            and the like.</p>
+            In a browser environment, the global scope is controlled by the window object while in Node. js,and the
+            like.
+
+        </p>
     </div>
     <div>
         <P class="questions">***3. How does the event loop work in javascript?</P>
